@@ -60,11 +60,8 @@
             <div id="login" class="ng-scope">
                 <div class="row">
                     <div class="col-lg-12 col-sm-6 text-center">
-                        <p class="lead">Welcome to the new and improved
-                            <br>Interconnection and Net Metering homepage</p>
                         <p>The Interconnection and Net Metering website is currently being updated to provide you with a user friendly experience.</p>
                         <p>Please check back later.</p>
-                        <br>
                     </div>
                 </div>
             </div>
@@ -97,31 +94,6 @@
                                         <li ng-repeat="contactLink in vm.footerContactLinks">
                                             <a target="_blank" ng-href="{{contactLink.LinkHref}}">{{contactLink.Text}}</a>
                                         </li>
-                                    </ul>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="flex-column">
-                        <table class="table link-menu site-map">
-                            <tr ng-if="coreVM.user">
-                                <td>Site Map</td>
-                                <td>
-                                    <ul class="list-unstyled">
-                                        <li ui-sref="applications.queue">My Applications</li>
-                                        <li ui-sref="user.account">Account Settings</li>
-                                        <li ui-sref="help">Help</li>
-                                        <li ng-click="shellVM.logout()">Log Out</li>
-                                    </ul>
-                                </td>
-                            </tr>
-                            <tr ng-if="!coreVM.user">
-                                <td>Site Map</td>
-                                <td>
-                                    <ul class="list-unstyled">
-                                        <li ui-sref="login">Log In</li>
-                                        <li ui-sref="forgotPassword">Forgot Password</li>
-                                        <li ui-sref="user.register">Register</li>
                                     </ul>
                                 </td>
                             </tr>
