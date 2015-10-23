@@ -2,124 +2,190 @@
 <html ng-app="app" class="Login wf-gudea-n4-active wf-gudea-n7-active wf-active">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <style type="text/css">
-    @charset "UTF-8";
-    [ng\:cloak],
-    [ng-cloak],
-    [data-ng-cloak],
-    [x-ng-cloak],
-    .ng-cloak,
-    .x-ng-cloak,
-    .ng-hide:not(.ng-hide-animate) {
-        display: none !important;
-    }
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <style type="text/css">
+  @charset "UTF-8";
+  [ng\:cloak],
+  [ng-cloak],
+  [data-ng-cloak],
+  [x-ng-cloak],
+  .ng-cloak,
+  .x-ng-cloak,
+  .ng-hide:not(.ng-hide-animate) {
+    display: none !important;
+  }
 
-    ng\:form {
-        display: block;
-    }
+  ng\:form {
+    display: block;
+  }
 
-    .ng-animate-shim {
-        visibility: hidden;
-    }
+  .ng-animate-shim {
+    visibility: hidden;
+  }
 
-    .ng-anchor {
-        position: absolute;
-    }
-    </style>
-    <script src="./splash_files/webfont.js"></script>
-    <style type="text/css"></style>
-    <link rel="stylesheet" href="./splash_files/css.css" media="all">
-    <script src="./splash_files/loadfont.js"></script>
-    <title ng-bind="title" class="ng-binding">ConnectTheGrid | Login</title>
-    <script>
-    window.config = {"Name":"ComEd","Links":[{"Type":"contact","LinkId":"ComEd","PreText":null,"Text":"ComEd","PostText":null,"LinkHref":"https://www.comed.com/Pages/default.aspx"},{"Type":"contact","LinkId":"Interconnection","PreText":null,"Text":"Interconnection","PostText":null,"LinkHref":"mailto:Interconnect@ComEd.com"},{"Type":"contact","LinkId":"Net Metering","PreText":null,"Text":"Net Metering","PostText":null,"LinkHref":"mailto:NetMetering@ComEd.com"},{"Type":"help","LinkId":"levels","PreText":"For applications greater than 10MVA, please","Text":"return to the Interconnection-Distribution webpage","PostText":"to download the appropriate application form.","LinkHref":"https://www.comed.com/customer-service/rates-pricing/interconnection/Pages/distribution-over-10000kva.aspx"},{"Type":"help","LinkId":"regulations","PreText":"The Illinois Commerce Commission has defined all of the Regulatory Requirements related to interconnection for Illinois. To review the Regulatory Requirements, please","Text":"click here (Electric Interconnection of Distributed Generation Facilities - Part 466)","PostText":null,"LinkHref":"https://www.comed.com/documents/customer-service/rates-pricing/interconnection/electricinterconnectionofdistributedgenerationfacilitiespart466.pdf?FileTracked=true"},{"Type":"support","LinkId":"ComEd Interconnection & Net Metering User Guide","PreText":null,"Text":"ComEd Interconnection & Net Metering User Guide","PostText":null,"LinkHref":"https://ctgcomed.blob.core.windows.net/public/Interconnection and Net Metering User Guide.pdf"},{"Type":"support","LinkId":"ComEd Interconnection-Distribution","PreText":null,"Text":"ComEd Interconnection-Distribution","PostText":null,"LinkHref":"https://www.comed.com/customer-service/rates-pricing/interconnection/Pages/distribution-over-10000kva.aspx"},{"Type":"support","LinkId":"Frequently Asked Questions","PreText":null,"Text":"Frequently Asked Questions","PostText":null,"LinkHref":"https://ctgcomed.blob.core.windows.net/public/Frequently%20Asked%20Questions%20-%20Interconnection%20and%20Net%20Metering.pdf"},{"Type":"support","LinkId":"Regulatory Requirements","PreText":null,"Text":"Regulatory Requirements","PostText":null,"LinkHref":"https://www.comed.com/Documents/customer-service/rates-pricing/interconnection/ElectricInterconnectionofDistributedGenerationFacilitiesPart466.pdf"}],"States":["Illinois"],"ShowLandingPage":false,"UtilityLogoUrl":"https://comctgblsapp200.blob.core.windows.net/public/logo.png","UtilityExternalLogoUrl":"https://comctgblsapp200.blob.core.windows.net/public/logo-external.png"};
-    </script>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="https://comed.connectthegrid.com/images/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="https://comed.connectthegrid.com/images/favicon-16x16.png" sizes="16x16">
-    <link rel="stylesheet" href="./splash_files/lib-ac6d7ea3.css">
-    <link rel="stylesheet" href="./splash_files/app-fdde9db9.css">
+  .ng-anchor {
+    position: absolute;
+  }
+  </style>
+  <script src="./splash_files/webfont.js"></script>
+  <style type="text/css"></style>
+  <link rel="stylesheet" href="./splash_files/css.css" media="all">
+  <script src="./splash_files/loadfont.js"></script>
+  <title ng-bind="title" class="ng-binding">ConnectTheGrid | Login</title>
+  <script>
+  window.config = {
+    "Name": "ComEd",
+    "Links": [{
+      "Type": "contact",
+      "LinkId": "ComEd",
+      "PreText": null,
+      "Text": "ComEd",
+      "PostText": null,
+      "LinkHref": "https://www.comed.com/Pages/default.aspx"
+    }, {
+      "Type": "contact",
+      "LinkId": "Interconnection",
+      "PreText": null,
+      "Text": "Interconnection",
+      "PostText": null,
+      "LinkHref": "mailto:Interconnect@ComEd.com"
+    }, {
+      "Type": "contact",
+      "LinkId": "Net Metering",
+      "PreText": null,
+      "Text": "Net Metering",
+      "PostText": null,
+      "LinkHref": "mailto:NetMetering@ComEd.com"
+    }, {
+      "Type": "help",
+      "LinkId": "levels",
+      "PreText": "For applications greater than 10MVA, please",
+      "Text": "return to the Interconnection-Distribution webpage",
+      "PostText": "to download the appropriate application form.",
+      "LinkHref": "https://www.comed.com/customer-service/rates-pricing/interconnection/Pages/distribution-over-10000kva.aspx"
+    }, {
+      "Type": "help",
+      "LinkId": "regulations",
+      "PreText": "The Illinois Commerce Commission has defined all of the Regulatory Requirements related to interconnection for Illinois. To review the Regulatory Requirements, please",
+      "Text": "click here (Electric Interconnection of Distributed Generation Facilities - Part 466)",
+      "PostText": null,
+      "LinkHref": "https://www.comed.com/documents/customer-service/rates-pricing/interconnection/electricinterconnectionofdistributedgenerationfacilitiespart466.pdf?FileTracked=true"
+    }, {
+      "Type": "support",
+      "LinkId": "ComEd Interconnection & Net Metering User Guide",
+      "PreText": null,
+      "Text": "ComEd Interconnection & Net Metering User Guide",
+      "PostText": null,
+      "LinkHref": "https://ctgcomed.blob.core.windows.net/public/Interconnection and Net Metering User Guide.pdf"
+    }, {
+      "Type": "support",
+      "LinkId": "ComEd Interconnection-Distribution",
+      "PreText": null,
+      "Text": "ComEd Interconnection-Distribution",
+      "PostText": null,
+      "LinkHref": "https://www.comed.com/customer-service/rates-pricing/interconnection/Pages/distribution-over-10000kva.aspx"
+    }, {
+      "Type": "support",
+      "LinkId": "Frequently Asked Questions",
+      "PreText": null,
+      "Text": "Frequently Asked Questions",
+      "PostText": null,
+      "LinkHref": "https://ctgcomed.blob.core.windows.net/public/Frequently%20Asked%20Questions%20-%20Interconnection%20and%20Net%20Metering.pdf"
+    }, {
+      "Type": "support",
+      "LinkId": "Regulatory Requirements",
+      "PreText": null,
+      "Text": "Regulatory Requirements",
+      "PostText": null,
+      "LinkHref": "https://www.comed.com/Documents/customer-service/rates-pricing/interconnection/ElectricInterconnectionofDistributedGenerationFacilitiesPart466.pdf"
+    }],
+    "States": ["Illinois"],
+    "ShowLandingPage": false,
+    "UtilityLogoUrl": "https://comctgblsapp200.blob.core.windows.net/public/logo.png",
+    "UtilityExternalLogoUrl": "https://comctgblsapp200.blob.core.windows.net/public/logo-external.png"
+  };
+  </script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="https://comed.connectthegrid.com/images/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="https://comed.connectthegrid.com/images/favicon-16x16.png" sizes="16x16">
+  <link rel="stylesheet" href="./splash_files/lib.css">
+  <link rel="stylesheet" href="./splash_files/app.css">
 </head>
 
-<body ng-controller="Core as coreVM" class="state  login landing" ng-class="{&#39;background-gradient-primary&#39;: coreVM.fullBackground &amp;&amp; coreVM.showLandingNav===false, &#39;fixed-view&#39;: coreVM.fixedView===true, &#39;flex-view&#39;: coreVM.fixedView===false &amp;&amp; !coreVM.fullBackground, &#39;internal-user&#39;: coreVM.user.isExternal===false, &#39;external-user&#39;: coreVM.user.isExternal===true, &#39;landing&#39;: coreVM.showLandingNav}">
-    <div id="wrapper">
-        <!-- Navbar -->
-        <div id="header-container">
-            <!-- ngIf: coreVM.hideNav===false && coreVM.showLandingNav===false -->
-            <!-- ngIf: coreVM.showLandingNav -->
-            <!-- ngInclude: 'app/core/layout/navbar/navbar.landing.html' -->
-            <div class="navbar-container ng-scope" ng-if="coreVM.showLandingNav" ng-include="&#39;app/core/layout/navbar/navbar.landing.html&#39;">
-
-            </div>
-            <!-- end ngIf: coreVM.showLandingNav -->
-        </div>
-        <!-- Body -->
-        <!-- uiView:  -->
-        <div id="main-container" ng-class="{&#39;content-margin-top&#39;: coreVM.hideNav===false}" ui-view="" class="ng-scope">
-            <div id="login" class="ng-scope">
-                <div class="row">
-                    <div class="col-lg-12 col-sm-6 text-center">
-                        <p>The Interconnection and Net Metering website is currently being updated to provide you with a user friendly experience.</p>
-                        <p>Please check back later.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Footer -->
-        <!-- ngInclude: undefined -->
-        <div id="footer-container" class="footer-container printRemove">
-            <div class="footer comed-footer" id="footer" ng-controller="Footer as vm">
-                <div class="flex-row">
-                    <div class="flex-column">
-                        <table class="table link-menu support">
-                            <tr>
-                                <td>Support</td>
-                                <td>
-                                    <ul class="list-unstyled">
-                                        <li ng-repeat="supportLink in vm.footerSupportLinks">
-                                            <a target="_blank" ng-href="{{supportLink.LinkHref}}">{{supportLink.Text}}</a>
-                                        </li>
-                                    </ul>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="flex-column">
-                        <table class="table link-menu contact-us">
-                            <tr>
-                                <td>Contact Us</td>
-                                <td>
-                                    <ul class="list-unstyled">
-                                        <li ng-repeat="contactLink in vm.footerContactLinks">
-                                            <a target="_blank" ng-href="{{contactLink.LinkHref}}">{{contactLink.Text}}</a>
-                                        </li>
-                                    </ul>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="flex-column hidden-xs">
-                        <div class="legal-text">
-                            <div class="legal"><strong>ConnectTheGrid</strong></div>
-                            <p>Copyright 2015 West Monroe Partners, LLC.
-                                <br>All Rights Reserved.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex-row visible-xs legal-text">
-                    <div class="separator"></div>
-                    <div class="text-center"><strong class="legal">ConnectTheGrid</strong> | <small>Copyright 2015 West Monroe Partners, LLC. All Rights Reserved.</small></div>
-                </div>
-            </div>
-        </div>
+<body ng-controller="Core as coreVM" class="state login landing">
+  <div id="wrapper">
+    <!-- Navbar -->
+    <div id="header-container">
+      <div class="navbar-container">
+        <img class="external-logo" height="60px" ng-src="https://comctgblsapp200.blob.core.windows.net/public/logo-external.png" alt="ConnectTheGrid" src="https://comctgblsapp200.blob.core.windows.net/public/logo-external.png" />
+      </div>
+      <!-- end ngIf: coreVM.showLandingNav -->
     </div>
-    <span data-cc-scroll-to-top=""></span>
-    <script src="./splash_files/lib-b3616dea.js"></script>
-    <script src="./splash_files/app-615670c6.js"></script>
-    <!--[if lte IE 8]>
+    <!-- Body -->
+    <!-- uiView:  -->
+    <div id="main-container" class="container text-center">
+      <br>
+      <div class="jumbotron animate zoomIn padding-15">
+        <div style="letter-spacing:20px">UNDER CONSTRUCTION</div>
+        <h1>The new Interconnection and Net Metering website is almost here!</h1>
+        <br>
+        <p class="lead">The site is currently down, but will be back soon with exciting new features.</p><p>Thanks for your patience!</p>
+      </div>
+    </div>
+    <!-- Footer -->
+    <!-- ngInclude: undefined -->
+    <div id="footer-container" class="footer-container printRemove">
+      <div class="footer comed-footer" id="footer" ng-controller="Footer as vm">
+        <div class="flex-row">
+          <div class="flex-column">
+            <table class="table link-menu support">
+              <tr>
+                <td>Support</td>
+                <td>
+                  <ul class="list-unstyled">
+                    <li ng-repeat="supportLink in vm.footerSupportLinks">
+                      <a target="_blank" ng-href="{{supportLink.LinkHref}}">{{supportLink.Text}}</a>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="flex-column">
+            <table class="table link-menu contact-us">
+              <tr>
+                <td>Contact Us</td>
+                <td>
+                  <ul class="list-unstyled">
+                    <li ng-repeat="contactLink in vm.footerContactLinks">
+                      <a target="_blank" ng-href="{{contactLink.LinkHref}}">{{contactLink.Text}}</a>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="flex-column hidden-xs">
+            <div class="legal-text">
+              <div class="legal"><strong>ConnectTheGrid</strong></div>
+              <p>Copyright 2015 West Monroe Partners, LLC.
+                <br>All Rights Reserved.</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex-row visible-xs legal-text">
+          <div class="separator"></div>
+          <div class="text-center"><strong class="legal">ConnectTheGrid</strong> | <small>Copyright 2015 West Monroe Partners, LLC. All Rights Reserved.</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <span data-cc-scroll-to-top=""></span>
+  <script src="./splash_files/lib.js"></script>
+  <script src="./splash_files/app.js"></script>
+  <!--[if lte IE 8]>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <![endif]-->
 </body>
